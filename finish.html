@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" user-scalable="no">
+    <meta property="og:title" content="Who's most similar to me in the squid game?">
+      <meta property="og:image" content="images/title.jpg">
+    <meta property="og:description" content="오징어게임에서 나와 가장 닮은 이는 누굴까 ?">
+  <title>Who's most similar to me in the squid game?</title>
+
+  <link rel="stylesheet" href="styles/commonStyle.css">
+  <link rel="stylesheet" href="styles/finishStyle.css">
+
+  <script type="text/javascript" src="scripts/fileRead.js?version=2"></script>
+  <script type="text/javascript" src="scripts/finishPageScript.js?version=2"></script>
+
+  </head>
+<body>
+  <div id="main_contents">
+      <p id="text1" class="scrollAnim">You have the most similar personality to </p>
+      <img id="resultImage" src="images/placeholder.jpg" class="scrollAnim">
+      <p id="text2" class="scrollAnim">You have the most similar personality to</p>
+      <p id="text3" class="scrollAnim">You have the most similar personality to</p>
+      <ul id="discription" >
+      </ul>
+      <div id = "harmonyWrapper">
+        <div class="harmony scrollAnim" id="good">
+          <p id="goodText">A person that suits you. 잘 어울리는 인물 </p>
+          <img id="goodImage" src="images/placeholder.jpg">
+          <p id="goodPower"></p>
+        </div>
+        <div class="harmony scrollAnim" id="bad">
+          <p id="badText">A person you can get close to if you've been together for a long time. 오래 지내다보면 잘 어울리는 사람.</p>
+          <img id="badImage" src="images/placeholder.jpg">
+          <p id="badPower"></p>
+        </div>
+      </div>
+      <div class="scrollAnim">
+        <p id="copyText">Share the results. It's fun! 결과를 공유해보세요.</p>
+        <button id="copyButton" onclick="copy()">Copy link address. 링크 주소 복사</button>
+      </div>
+      <div class="scrollAnim">
+        <p id="startText">You have the most similar personality to </p>
+        <button id="startButton" onclick="start()" >Going to test. 나와 닮은 이는...</button>
+      </div>
+      <div id="dev">
+        Contact | @<br>
+        Don't make fun of the results. I do it just for fun. We're all precious.!
+      </div>
+      <div id="filler"></div>
+  </div>
+</body>
+</html>
